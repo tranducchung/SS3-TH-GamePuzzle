@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+
+<body>
+<img id="img1" src="P1.jpg" alt="" onclick="a()" width="800" height="160"/><br>
+<img id="img2" src="P2.jpg" alt="" onclick="b()" width="800" height="160"/><br>
+<img id="img3" src="P3.jpg" alt="" onclick="c()" width="800" height="160"/><br>
+<img id="img4" src="P4.jpg" alt="" onclick="d()" width="800" height="160"/><br>
+<img id="img5" src="P5.jpg" alt="" onclick="e()" width="800" height="160"/><br>
+<script>
+    let count = 0;
+    let count1 = 0;
+    let count2 = 0;
+    let count3 = 0;
+    let count4 = 0;
+    let x = 0;
+    function a() {
+        if (count === 0){
+            img1.src="C1.jpg";
+            count ++;
+        }else if(count ===1){
+            img1.src="M1.jpg";
+            count++
+        }else if(count===2){
+            img1.src="P1.jpg";
+            count = 0;
+        }
+        if(count===0&&count1===0&&count2===0&&count3===0&&count4===0
+            || count===1&&count1===1&&count2===1&&count3===1&&count4===1
+            || count===2&&count1===2&&count2===2&&count3===2&&count4===2
+        ){
+            alert(" YOU WIN ")
+        }
+    }
+    function b() {
+        if (count1 === 0){
+            img2.src="C2.jpg";
+            count1 ++;
+        }else if(count1 ===1){
+            img2.src="M2.jpg";
+            count1++
+        }else if(count1===2){
+            img2.src="P2.jpg";
+            count1 = 0;
+        }
+         if(count===0&&count1===0&&count2===0&&count3===0&&count4===0
+            || count===1&&count1===1&&count2===1&&count3===1&&count4===1
+             || count===2&&count1===2&&count2===2&&count3===2&&count4===2
+        ){
+             alert(" YOU WIN ")
+         }
+    }
+    function c() {
+        if (count2 === 0){
+            img3.src="C3.jpg";
+            count2 ++;
+        }else if(count2 ===1){
+            img3.src="M3.jpg";
+            count2++
+        }else if(count2===2){
+            img3.src="P3.jpg";
+            count2 = 0;
+        }
+         if(count===0&&count1===0&&count2===0&&count3===0&&count4===0
+             || count===1&&count1===1&&count2===1&&count3===1&&count4===1
+            || count===2&&count1===2&&count2===2&&count3===2&&count4===2
+        ){
+             alert(" YOU WIN ")
+        }
+    }
+    function d() {
+        if (count3 === 0){
+            img4.src="C4.jpg";
+            count3 ++;
+        }else if(count3 ===1){
+            img4.src="M4.jpg";
+            count3++
+        }else if(count3===2){
+            img4.src="P4.jpg";
+            count3 = 0;
+        }
+         if(count===0&&count1===0&&count2===0&&count3===0&&count4===0
+             || count===1&&count1===1&&count2===1&&count3===1&&count4===1
+             || count===2&&count1===2&&count2===2&&count3===2&&count4===2
+         ){
+             alert(" YOU WIN ")
+         }
+    }
+    function e() {
+        if (count4 === 0){
+            img5.src="C5.jpg";
+            count4 ++;
+        }else if(count4 ===1){
+            img5.src="M5.jpg";
+            count4++
+        }else if(count4===2){
+            img5.src="P5.jpg";
+            count4 = 0;
+        }
+         if(count===0&&count1===0&&count2===0&&count3===0&&count4===0
+             || count===1&&count1===1&&count2===1&&count3===1&&count4===1
+             || count===2&&count1===2&&count2===2&&count3===2&&count4===2
+         ){
+             alert(" YOU WIN ")
+         }
+    }
+</script>
+</body>
+</html>
